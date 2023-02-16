@@ -12,9 +12,9 @@ const Navbar = () => {
         setnavOpen(!navOpen)
     }
   return (
-    <nav className="w-full fixed top-0 right-0 left-0  border border-black uppercase">
+    <nav className="w-full fixed top-0 right-0 left-0 uppercase">
       <div className="flex justify-between px-10 items-center">
-        <div className="w-[130px] ">
+        <div className="w-[80px] md:w-[130px] ">
           <Image src={logo} alt="" className="" />
         </div>
 {/* ----------desktop menu */}
@@ -37,12 +37,12 @@ const Navbar = () => {
           <AiOutlineMenu />
         </div>
       </div>
-      <div className={`${navOpen ? "block" : "hidden"} absolute w-full top-0 right-0 left-0 bottom-0 h-screen bg-blue-400`}>
-            <ul className="mx-auto border h-screen flex flex-col items-center justify-center">
+      <div className={`${navOpen ? "block" : "hidden"} absolute w-full top-0 right-0 left-0 bottom-0 h-screen bg-black`}>
+            <ul className="mx-auto border h-screen flex flex-col items-center justify-center font-semibold text-yellow-600">
                 {NAV__LINKS.map((item, index) => (
                     <li key={index}> <Link href={item.path}>{item.display}</Link></li>
                 ))}
-                <li onClick={handleNav}><AiOutlineClose/></li>
+                <li className="absolute top-8 right-8" onClick={handleNav}><AiOutlineClose/></li>
             </ul>
       </div>
     </nav>
