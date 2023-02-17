@@ -4,7 +4,7 @@ export const NAV__LINKS = [
       display: "home",
     },
     {
-      path: "about",
+      path: "about/AboutUs",
       display: "about us",
     },
     {
@@ -27,5 +27,29 @@ export const NAV__LINKS = [
       path: "contact",
       display: "contact us",
     },
+  ];
+
+export const EMPLOYEES = [
+    {
+      name: "Jane Doe",
+      title: "Employee 1",
+    },
+    {
+      name: "Jane Doe",
+      title: "Employee 2",
+    },
+    {
+      name: "Jane Doe",
+      title: "Employee 3",
+    },
+    {
+      name: "Jane Doe",
+      title: "Employee 4",
+    },
+    {
+      name: "John Doe",
+      title: "Employee 5",
+    },
+   
   ];
   
