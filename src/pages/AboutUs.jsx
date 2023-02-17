@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
-import bodyShop from "../../assets/images/bodyShopGym2.png";
-import owners from "../../assets/images/owners.jpg";
+import bodyShop from "../assets/images/bodyShopGym2.png";
+import owners from "../assets/images/owners.jpg";
 import { EMPLOYEES } from "@/assets/data";
 
 const AboutUs = () => {
@@ -28,6 +28,8 @@ const AboutUs = () => {
           <div className="w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] bg-yellow-600 rounded-full p-2">
             <Image
               src={owners}
+              width="500"
+              height="500"
               alt=""
               className="w-fullz h-full rounded-full object-cover"
             />
@@ -43,8 +45,8 @@ const AboutUs = () => {
                 >
                   <Image
                     src={`/${index + 1}.jpg`}
-                    width="100"
-                    height="100"
+                    width="500"
+                    height="500"
                     alt=""
                     className="w-full h-full rounded-full object-cover"
                   />
