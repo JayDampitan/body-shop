@@ -4,27 +4,27 @@ export const NAV__LINKS = [
       display: "home",
     },
     {
-      path: "about/AboutUs",
+      path: "AboutUs",
       display: "about us",
     },
     {
-      path: "membership",
+      path: "Membership",
       display: "membership",
     },
     {
-      path: "services",
+      path: "Services",
       display: "services",
     },
     {
-      path: "facility",
+      path: "Facility",
       display: "facility",
     },
     {
-      path: "bodyshopbuilt",
+      path: "BodyShopBuilt",
       display: "body shop built",
     },
     {
-      path: "contact",
+      path: "Contact",
       display: "contact us",
     },
   ];
