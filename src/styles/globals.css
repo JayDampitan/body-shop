@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 @layer components {
-    * {
-        font-family: "Poppins";
-      }
+   * {
+    font-family: "Poppins";
+  }
 
     .hero-image {
         width: 100%;
