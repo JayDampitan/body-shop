@@ -15,11 +15,11 @@ const trainers = [trainer1, trainer2, trainer3, trainer4];
 const Services = () => {
   return (
     <div className="flex flex-col h-auto items-center justify-center">
-      <div className="text-offWhite w-full flex flex-col items-center bg-primary pt-36 pb-16 lg:pt-48 lg:pb-28 text-center">
-        <h2 className=" uppercase text-lg lg:text-4xl font-semibold">
+      <div className="text-offWhite w-full flex flex-col items-center bg-primary pt-36 pb-16 lg:py-44 lg:pb-28 text-center">
+        <h2 className="border-b border-offWhite uppercase text-lg lg:text-4xl font-semibold">
           services
         </h2>
-        <p className="text-[13px] lg:text-lg px-10 mt-8 lg:max-w-4xl leading-6 lg:leading-10">
+        <p className="text-[13px] lg:text-xl px-10 mt-8 lg:max-w-4xl leading-6 lg:leading-10">
           If you're serious about losing weight, getting healthy and/or building
           muscle, hiring a personal trainer can be a step in the right
           direction. The Body Shop Health Club has friendly and knowledgeable

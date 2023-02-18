@@ -111,3 +111,26 @@ export const TRAINING__SERVICES = [
     desc: "Our perfect starter package! Wether you're a new member looking for that extra instruction to begin your fitness journey or a fitness regular looking to revitalize your program, our 4 one hour sessions are sure to help.",
   },
 ];
+
+export const TANNING_PLANS = [
+  {
+    session: "single session",
+    price: "$20.00"
+  },
+  {
+    session: "10 session punch card",
+    price: "$150.00"
+  },
+  {
+    session: "non-member monthly auto pay",
+    price: "$95.00"
+  },
+  {
+    session: "member monthly auto pay",
+    price: "$50.00"
+  },
+  {
+    session: "member ultimate tanning with sauna",
+    price: "$95.00"
+  },
+]
