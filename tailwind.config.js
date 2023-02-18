@@ -11,6 +11,7 @@ module.exports = {
         secondary: "#06202F",
         darkGrey: "#1B1B1B",
         offWhite: "#FEFEFE",
+        cardColor: "#F4F2F2",
       },
     },
   },
