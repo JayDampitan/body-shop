@@ -14,7 +14,7 @@ const trainers = [trainer1, trainer2, trainer3, trainer4];
 
 const Services = () => {
   return (
-    <div className="flex flex-col h-auto items-center justify-center">
+    <div className="flex bg-gray-50 flex-col h-auto items-center justify-center">
       <div className="text-offWhite w-full flex flex-col items-center bg-primary pt-36 pb-16 lg:py-44 lg:pb-28 text-center">
         <h2 className="border-b border-offWhite uppercase text-lg lg:text-4xl font-semibold">
           services

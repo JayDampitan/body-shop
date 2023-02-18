@@ -6,7 +6,7 @@ import { EMPLOYEES } from "@/assets/data";
 
 const AboutUs = () => {
   return (
-    <div className="text-center flex items-center flex-col justify-center h-auto w-full">
+    <div className="text-center bg-gray-50 flex items-center flex-col justify-center h-auto w-full">
       <div className="bg-primary w-full flex-col flex items-center justify-center py-32 lg:py-44">
         <h2 className=" border-b border-offWhite text-offWhite uppercase text-lg lg:text-4xl font-semibold">
           welcome to the body shop family

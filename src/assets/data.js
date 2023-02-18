@@ -131,6 +131,7 @@ export const TANNING_PLANS = [
   },
   {
     session: "member ultimate tanning with sauna",
-    price: "$95.00"
+    price: "$95.00",
+    headline: "all access membership"
   },
 ]
