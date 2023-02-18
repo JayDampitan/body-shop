@@ -52,7 +52,8 @@ const Services = () => {
                     journey or a fitness regular looking to revitalize your
                     program, our 4 one hour sessions are sure to help.
                   </p>
-                  <button className="uppercase border px-3 py-1 border-primary text-primary rounded-full text-[13px] lg:text-base mt-2 lg:my-4 hover:text-offWhite hover:bg-primary duration-300">
+
+                  <button className=" uppercase border px-3 py-1 border-primary text-primary rounded-full text-[13px] lg:text-base mt-2 lg:my-4 hover:text-offWhite hover:bg-primary duration-300">
                     sign up
                   </button>
                 </div>

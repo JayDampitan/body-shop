@@ -59,10 +59,12 @@ const Facility = () => {
           merchandise and supplements
         </h2>
         <p className="text-[13px] lg:text-xl px-10 mt-8 lg:max-w-4xl leading-6 lg:leading-10 mx-auto">
-          Enjoy the amazing taste of one of our many Protein Shakes. Benefits
-          include improved recovery, preserving and building lean muscle mass,
-          weight loss and boosting metabolism. Add optional supplements to make
-          your shake even more beneficial.
+          The Body Shop Health Club is home to the only Smoothie Bar &
+          Supplement Shop in Kings County. We offer a wide range of nutritional
+          and sports supplements, protein shakes, sports drinks and accessories
+          to help achieve and maintain your fitness goals. CBD, Pre Workouts,
+          Fat Burners, BCAA'S, Protein Powder, Vitamins, Sleep Aids, and so much
+          more.
         </p>
         <Image className="mx-auto mt-10" src={shop} />
       </div>
@@ -90,7 +92,9 @@ const Facility = () => {
               key={index}
               className="w-3/4 lg:w-1/4 bg-cardColor flex flex-col justify-between text-[13px] lg:text-md shadow-md px-4 rounded-md text-center py-14 uppercase font-semibold"
             >
-              <h2 className="border-b border-primary my-2 sm:text-lg">{plan.session}</h2>
+              <h2 className="border-b border-primary my-2 sm:text-lg">
+                {plan.session}
+              </h2>
               <p className="lg:text-lg mt-2">{plan.price}</p>
             </div>
           ))}
