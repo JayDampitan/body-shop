@@ -21,13 +21,15 @@ const Navbar = () => {
         <div className="hidden lg:flex">
           <ul className="flex gap-4 items-center">
             {NAV__LINKS.map((item) => (
-              <li className="font-semibold">
+              <li className="font-semibold relative nav-hover">
                 <Link href={`${item.path}`}>{item.display}</Link>
               </li>
             ))}
             <li className="border-l border-primary">
-              <button className=" border border-primary text-primary py-1 rounded-full px-4 uppercase ml-3">
-                log in
+              <button className=" border border-primary text-primary py-1 rounded-full px-4 uppercase ml-3 hover:text-offWhite hover:bg-primary duration-300">
+                <Link target="_blank" href="https://login.ionos.com/?redirect_url=https%3A%2F%2Fmy.ionos.com%2Fmywebsite-overview%3Fmywebsite.pageid%3D529000&username=www.thebodyshophealthclub.com">
+                  log in
+                </Link>
               </button>
             </li>
           </ul>

@@ -2,10 +2,10 @@ import { FaAddressBook, FaPhoneAlt, FaMailBulk } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="flex text-offWhite  h-auto lg:h-screen py-6 w-full justify-center">
+    <div className="flex text-offWhite bg-gray-50  h-auto lg:h-screen py-6 w-full justify-center">
       <div className="w-[90%] lg:h-[80vh] mt-20 lg:mt-36 lg:pl-20 bg-primary rounded-2xl flex flex-col lg:flex-row items-center justify-center py-6">
         <div className="uppercase lg:w-[50%] w-full text-center lg:text-start">
-        <h2 className="text-lg my-3 font-semibold lg:text-4xl after:border after:block after:mx-auto lg:after:mx-0 after:max-w-[150px] lg:after:max-w-[250px] after:border-offWhite">
+          <h2 className="text-lg my-3 font-semibold lg:text-4xl after:border after:block after:mx-auto lg:after:mx-0 after:max-w-[150px] lg:after:max-w-[250px] after:border-offWhite">
             contact us
           </h2>
           <p>
@@ -40,16 +40,16 @@ const Contact = () => {
         </div>
 
         {/* -----------form section---------------- */}
-        <div className="py-3 px-6 w-[90%] lg:w-[40%] mt-8">
+        <div className="py-3 px-6 w-[90%] lg:w-[40%] mt-8 uppercase">
           <form className="flex flex-col lg:gap-1" action="">
             <label>name</label>
             <input className="rounded" type="text" />
             <label>address</label>
-            <input className="rounded" type="text" />
+            <input className="rounded" type="address" />
             <label>email</label>
-            <input className="rounded" type="text" />
+            <input className="rounded" type="email" />
             <label>phone</label>
-            <input className="rounded" type="text" />
+            <input className="rounded" type="phone" />
             <label htmlFor="">message</label>
             <textarea
               className="rounded resize-none"
