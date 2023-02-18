@@ -7,7 +7,7 @@ import { EMPLOYEES } from "@/assets/data";
 const AboutUs = () => {
   return (
     <div className="text-center flex items-center flex-col justify-center h-auto w-full">
-      <div className="bg-yellow-500 w-full flex-col flex items-center justify-center h-[50vh] lg:h-[55vh]">
+      <div className="bg-primary w-full flex-col flex items-center justify-center h-[50vh] lg:h-[55vh]">
         <h1 className="text-gray-100 text-2x lg:text-5xl uppercase font-bold">
           welcome to the body shop family
         </h1>
@@ -25,7 +25,7 @@ const AboutUs = () => {
         </h2>
 
         <div className="mt-10 flex flex-col items-center justify-center">
-          <div className="w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] bg-yellow-600 rounded-full p-2">
+          <div className="w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] bg-primary rounded-full p-2">
             <Image
               src={owners}
               width="500"
@@ -41,7 +41,7 @@ const AboutUs = () => {
               <div className="   mb-16">
                 <div
                   key={index}
-                  className="w-[130px] h-[130px] lg:w-[220px] lg:h-[220px] bg-yellow-600 rounded-full p-2"
+                  className="w-[130px] h-[130px] lg:w-[220px] lg:h-[220px] bg-primary rounded-full p-2"
                 >
                   <Image
                     src={`/${index + 1}.jpg`}

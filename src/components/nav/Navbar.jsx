@@ -25,8 +25,8 @@ const Navbar = () => {
                 <Link href={`${item.path}`}>{item.display}</Link>
               </li>
             ))}
-            <li className="border-l border-yellow-600">
-              <button className=" border border-yellow-600 text-yellow-600 py-1 rounded-full px-4 uppercase ml-3">
+            <li className="border-l border-primary">
+              <button className=" border border-primary text-primary py-1 rounded-full px-4 uppercase ml-3">
                 log in
               </button>
             </li>
@@ -41,9 +41,9 @@ const Navbar = () => {
       <div
         className={`${
           navOpen ? "block" : "hidden"
-        } absolute w-full top-0 right-0 left-0 bottom-0 h-screen bg-black`}
+        } absolute w-full top-0 right-0 left-0 bottom-0 h-screen bg-darkGrey`}
       >
-        <ul className="mx-auto border h-screen flex flex-col items-center justify-center font-bold text-yellow-600">
+        <ul className="mx-auto border h-screen flex flex-col items-center justify-center font-bold text-primary">
           {NAV__LINKS.map((item, index) => (
             <li key={index}>
               {" "}
