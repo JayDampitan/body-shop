@@ -51,6 +51,24 @@ export const EMPLOYEES = [
     title: "Employee 5",
   },
 ];
+export const TRAINERS = [
+  {
+    name: "Jane Doe",
+    title: "Trainer 1",
+  },
+  {
+    name: "Jane Doe",
+    title: "Trainer 2",
+  },
+  {
+    name: "Jane Doe",
+    title: "Trainer 3",
+  },
+  {
+    name: "Jane Doe",
+    title: "Trainer 4",
+  },
+];
 
 export const MEMBER__PLAN = [
   {
@@ -73,5 +91,23 @@ export const MEMBER__PLAN = [
     length: "1 year",
     fee: " $60.96",
     price: "$299.99",
+  },
+];
+
+export const TRAINING__SERVICES = [
+  {
+    title: "4 sessions for $170.00",
+    header: "limited offer",
+    desc: "Our perfect starter package! Wether you're a new member looking for that extra instruction to begin your fitness journey or a fitness regular looking to revitalize your program, our 4 one hour sessions are sure to help.",
+  },
+  {
+    title: "4 sessions for $170.00",
+    header: "limited offer",
+    desc: "Our perfect starter package! Wether you're a new member looking for that extra instruction to begin your fitness journey or a fitness regular looking to revitalize your program, our 4 one hour sessions are sure to help.",
+  },
+  {
+    title: "4 sessions for $170.00",
+    header: "limited offer",
+    desc: "Our perfect starter package! Wether you're a new member looking for that extra instruction to begin your fitness journey or a fitness regular looking to revitalize your program, our 4 one hour sessions are sure to help.",
   },
 ];

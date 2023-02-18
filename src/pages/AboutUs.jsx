@@ -11,7 +11,7 @@ const AboutUs = () => {
         <h1 className="text-gray-100 text-2x lg:text-5xl uppercase font-bold">
           welcome to the body shop family
         </h1>
-        <p className="max-w-3xl text-sm text-gray-100 mt-10 lg:text-xl px-2">
+        <p className="max-w-3xl text-sm text-gray-100 mt-10 lg:text-xl px-2 lg:leading-10">
           Family owned and operated, we take great pride in providing an
           alternative to the corporate clubs. Whether you're a beginner or a
           seasoned athlete, our helpful staff is trained to assist you.
@@ -36,7 +36,7 @@ const AboutUs = () => {
             <p className="font-semibold mt-6">Jane and John Doe</p>
             <p>Owners</p>
           </div>
-          <div className="my-32 flex flex-col lg:flex-row gap-6">
+          <div className="my-32 flex flex-wrap items-center justify-center lg:flex-row gap-6">
             {EMPLOYEES.map((employee, index) => (
               <div className="   mb-16">
                 <div

@@ -6,7 +6,7 @@ const Membership = () => {
     <div className="flex flex-col h-auto items-center justify-center pt-20  text-center w-full">
       <div className="w-full bg-primary text-white flex flex-col items-center justify-center shadow-lg py-20 lg:py-40">
         <h2 className="uppercase text-4xl font-bold">membership</h2>
-        <p className="max-w-3xl mt-10 text-[13px] sm:text-xl px-4">
+        <p className="max-w-3xl mt-10 text-[13px] sm:text-xl px-4 lg:leading-10">
           The Body Shop Health Club offers a wide variety of membership options
           designed to fit your needs, your schedule and your budget. From our no
           commitment month-to-month membership to our all-inclusive plans, we
