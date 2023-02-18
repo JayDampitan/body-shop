@@ -12,11 +12,11 @@ const Navbar = () => {
     setnavOpen(!navOpen);
   };
   return (
-    <nav className="w-full fixed bg-gray-100 top-0 right-0 left-0 uppercase z-20">
+    <nav className="w-full fixed bg-gray-100 top-0 right-0 left-0 uppercase z-20 shadow-lg">
       <div className="flex justify-between px-10 items-center">
-        <div className="w-[80px] md:w-[130px] ">
+        <Link href="/" className="w-[80px] md:w-[130px] ">
           <Image src={logo} alt="" className="" />
-        </div>
+        </Link>
         {/* ----------desktop menu */}
         <div className="hidden lg:flex">
           <ul className="flex gap-4 items-center">
