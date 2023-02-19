@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Image from "next/image";
-import girl from "../../assets/images/girl.jpg";
 import stretchingCouple from "../../assets/images/stretching4.jpg";
 import smoothie from "../../assets/images/smoothie.jpg";
 import Link from "next/link";
@@ -18,7 +17,7 @@ const Hero = () => {
         <h3 className="lg:text-4xl">your 24/7 fitness facility</h3>
         <button
           className="border uppercase border-primary text-primary py-1 px-3 rounded-full
-         mt-6 hover:bg-primary hover:text-white duration-300"
+         mt-6 hover:bg-primary hover:text-white duration-300 lg:text-2xl lg:px-5 "
         >
           <Link href="contact"> start sweating </Link>
         </button>

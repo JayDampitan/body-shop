@@ -135,3 +135,126 @@ export const TANNING_PLANS = [
     headline: "all access membership"
   },
 ]
+
+
+export const BUILT__CLASSES = [ 
+  {
+    day: "monday",
+    classes: [
+      {
+        time: "5:00am",
+        training: "Body Rock",
+      },
+      {
+        time: "4:30pm",
+        training: "Toned Up",
+      },
+      {
+        time: "5:45pm",
+        training: "HIIT Spin",
+      },
+      {
+        time: "6:30pm",
+        training: "Cardio Combat",
+      },
+    ]
+  },
+  {
+    day: "tuesday",
+    classes: [
+      {
+        time: "5:30am",
+        training: "Boot Camp",
+      },
+      {
+        time: "9:00am",
+        training: "Yoga",
+      },
+      {
+        time: "4:30pm",
+        training: "Yoga",
+      },
+      {
+        time: "5:30pm",
+        training: "Basic Barbell",
+      },
+      {
+        time: "6:30pm",
+        training: "Body Rock 30",
+      },
+    ]
+  },
+  {
+    day: "wednesday",
+    classes: [
+      {
+        time: "5:00am",
+        training: "Body Rock",
+      },
+      {
+        time: "4:30pm",
+        training: "Toned Up",
+      },
+      {
+        time: "5:45pm",
+        training: "Cardio Combat",
+      },
+      {
+        time: "7:00pm",
+        training: "Zumba",
+      },
+    ]
+  },
+  {
+    day: "thursday",
+    classes: [
+      {
+        time: "5:30am",
+        training: "Boot Camp",
+      },
+      {
+        time: "4:30pm",
+        training: "Yoga",
+      },
+      {
+        time: "5:45pm",
+        training: "HIIT Spin",
+      },
+      {
+        time: "6:30pm",
+        training: "Body Rock 30",
+      },
+    ]
+  },
+  {
+    day: "friday",
+    classes: [
+      {
+        time: "5:00am",
+        training: "Body Rock",
+      },
+      {
+        time: "9:00am",
+        training: "Yoga",
+      },
+      {
+        time: "5:45pm",
+        training: "Cardio Combat",
+      },
+      {
+        time: "7:00pm",
+        training: "Zumba",
+      },
+    ]
+  },
+  {
+    day: "saturday",
+    classes: [
+      {
+        time: "7:45am",
+        training: "Body Rock 30",
+      },
+     
+    ]
+  },
+]

@@ -4,7 +4,7 @@ import React from "react";
 const Membership = () => {
   return (
     <div className="flex flex-col h-auto bg-gray-50 items-center justify-center   text-center w-full">
-      <div className="w-full bg-primary text-white flex flex-col items-center justify-center shadow-lg py-20 lg:py-44">
+      <div className="w-full bg-primary text-white flex flex-col items-center justify-center shadow-lg py-20 lg:pt-44">
         <h2 className="border-b border-offWhite uppercase text-4xl font-bold">membership</h2>
         <p className="max-w-3xl mt-10 text-[13px] sm:text-xl px-4 lg:leading-10">
           The Body Shop Health Club offers a wide variety of membership options
