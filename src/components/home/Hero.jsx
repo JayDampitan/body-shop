@@ -66,10 +66,10 @@ const Hero = () => {
             />
           </div>
           <div className="text-lg lg:text-4xl text-center uppercase font-medium lg:mr-32 max-w-xs lg:max-w-md">
-            <h3>Now Serving Blended Coffees w/ Protein!!</h3>
+            <h3>{`Now Serving Blended Coffees w/ Protein!!`}</h3>
             <p className="font-thin lg:text-lg mt-4">
-              Finally, a healthy, low calorie, low carb, high protein
-              alternative to the traditional "sugar bomb" blended coffee.
+              {` Finally, a healthy, low calorie, low carb, high protein
+              alternative to the traditional "sugar bomb" blended coffee.`}
             </p>
             <button
               className="border text-[13px] lg:text-base uppercase border-primary text-primary py-1 px-3 rounded-full

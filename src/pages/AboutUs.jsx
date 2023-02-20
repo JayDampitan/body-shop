@@ -14,11 +14,11 @@ const AboutUs = () => {
           welcome to the body shop family
         </h2>
         <p className="max-w-3xl text-sm text-offWhite mt-10 sm:text-xl px-2 leading-6 lg:leading-10">
-          Welcome to The Body Shop Health Club. If you like that hometown gym
+         {` Welcome to The Body Shop Health Club. If you like that hometown gym
           atmosphere combined with 24 hour access for members, welcome to our
           club. Family owned and operated, we take great pride in providing an
           alternative to the corporate clubs. Whether you're a beginner or a
-          seasoned athlete, our helpful staff is trained to assist you.
+          seasoned athlete, our helpful staff is trained to assist you.`}
         </p>
       </div>
       <div className="w-[90%] lg:w-[60%] ">
