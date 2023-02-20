@@ -2,6 +2,7 @@ import Image from "next/image";
 import bodyBuilt from "../assets/images/bodyshopbuilt.jpg";
 import builtAd from "../assets/images/bodyBuiltAd.jpeg";
 import { BUILT__CLASSES } from "@/assets/data";
+import { motion } from "framer-motion";
 
 const BodyShopBuilt = () => {
   return (
@@ -29,11 +30,15 @@ const BodyShopBuilt = () => {
         <Image className="h-96 lg:h-[100%]" src={builtAd} />
         <div className=" flex flex-col w-full lg:w-1/2 px-3 mt-3">
           <h2 className="uppercase text-lg font-semibold flex items-center justify-center lg:text-4xl">
-            classes
+            class schedule
           </h2>
           <div className="flex flex-wrap flex-col lg:flex-row items-stretch justify-center gap-3 mt-4">
             {BUILT__CLASSES.map((item, index) => (
-              <div
+              <motion.div
+                initial={{ x: -10, y: 10, opacity: 0 }}
+                whileInView={{ x: 0, y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+                viewport={{ once: true }}
                 key={index}
                 className="w-full lg:w-[45%] flex flex-col justify-start bg-cardColor shadow-md rounded-md px-7 py-3"
               >
@@ -46,7 +51,7 @@ const BodyShopBuilt = () => {
                     </p>
                   </div>
                 ))}
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

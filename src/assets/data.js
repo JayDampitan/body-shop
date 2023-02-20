@@ -256,3 +256,75 @@ export const BUILT__CLASSES = [
     ],
   },
 ];
+
+// --------------------page animations---------------------------------
+
+export const leftVariant = {
+  hidden: {
+    x: -10,
+  },
+  visible: {
+    x: 0,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
+export const rightVariant = {
+  hidden: {
+    x: 10,
+  },
+  visible: {
+    x: 0,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
+export const topVariant = {
+  hidden: {
+    y: -100,
+  },
+  visible: {
+    y: 0,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
+export const bottomVariant = {
+  hidden: {
+    x: 100,
+  },
+  visible: {
+    x: 0,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
+
+export const heroImageVariant = {
+  hidden: {
+    y: "-120%",
+  },
+  visible: {
+    y: 0,
+    transition: {
+      duration: 1,
+      delay: .5
+    },
+  },
+};
+export const mainHeroVariant = {
+  hidden: {
+    y: "-100%",
+  },
+  visible: {
+    y: 0,
+    transition: {
+      duration: 0.5,
+      delay: 1.2
+    },
+  },
+};

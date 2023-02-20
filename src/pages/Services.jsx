@@ -8,6 +8,7 @@ import trainer1 from "../assets/images/trainer1.jpg";
 import trainer2 from "../assets/images/trainer2.jpg";
 import trainer3 from "../assets/images/trainer3.jpg";
 import trainer4 from "../assets/images/trainer4.jpg";
+import { motion } from "framer-motion";
 
 const images = [workout, stretching, training3];
 const trainers = [trainer1, trainer2, trainer3, trainer4];
@@ -39,7 +40,13 @@ const Services = () => {
         {TRAINING__SERVICES.map((service, index) => {
           return (
             <>
-              <div className="w-[80%] lg:w-[70%] shadow-lg flex flex-col items-center justify-between   lg:flex-row bg-cardColor rounded-md px-6 py-6 mt-10 hover:-translate-y-1 duration-300">
+              <motion.div
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.2 * index }}
+                viewport={{ once: true }}
+                className="w-[80%] lg:w-[70%] shadow-lg flex flex-col items-center justify-between   lg:flex-row bg-cardColor rounded-md px-6 py-6 mt-10 "
+              >
                 <div className="lg:w-[50%] h-60 lg:h-[450px]">
                   <Image src={images[index]} className="h-full object-cover" />
                 </div>
@@ -49,12 +56,8 @@ const Services = () => {
                   <p className="text-[13px] lg:text-base font-normal leading-6 lg:leading-7">
                     {service.desc}
                   </p>
-
-                  <button className=" uppercase border px-3 py-1 border-primary text-primary rounded-full text-[13px] lg:text-base mt-2 lg:my-4 hover:text-offWhite hover:bg-primary duration-300">
-                    sign up
-                  </button>
                 </div>
-              </div>
+              </motion.div>
             </>
           );
         })}

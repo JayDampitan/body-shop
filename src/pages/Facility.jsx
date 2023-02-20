@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import gym from "../assets/images/gym.jpg";
 import blend from "../assets/images/powerBlendz.jpg";
@@ -12,11 +13,11 @@ import { TANNING_PLANS } from "@/assets/data";
 const Facility = () => {
   return (
     <div className="flex flex-col h-auto bg-gray-50 items-center justify-center">
-      <div className="text-offWhite w-full flex flex-col items-center bg-primary pt-36 pb-20 lg:py-44 lg:pb-32 text-center">
+      <div className="text-offWhite w-full flex flex-col items-center bg-primary pt-36 pb-16 lg:py-44 lg:pb-28 text-center">
         <h2 className="border-b border-offWhite uppercase text-lg lg:text-4xl font-semibold">
           facility
         </h2>
-        <p className="text-[13px] lg:text-xl px-10 mt-2 lg:max-w-4xl leading-6 lg:leading-10">
+        <p className="text-[13px] lg:text-xl px-10 mt-8 lg:max-w-4xl leading-6 lg:leading-10">
           The Body Shop Health Club offers everything you need to effectively
           achieve and maintain your fitness goals including a large selection of
           cardio and strength training equipment, a full supplement shop, a
@@ -26,7 +27,10 @@ const Facility = () => {
           Health Club is the choice for so many.
         </p>
       </div>
-      <Image src={gym} className="h-64 lg:h-auto lg:w-[70%] -translate-y-16 object-cover" />
+      <Image
+        src={gym}
+        className="h-64 lg:h-auto lg:w-[70%] -translate-y-8 lg:-translate-y-16 object-cover"
+      />
 
       {/* -----------------smoothie section---------------- */}
       <div className="text-center lg:my-10">
@@ -88,7 +92,11 @@ const Facility = () => {
 
         <div className="my-10 flex flex-wrap gap-3  items-stretch justify-center ">
           {TANNING_PLANS.map((plan, index) => (
-            <div
+            <motion.div
+              initial={{ x: -10, y: 10, opacity: 0 }}
+              whileInView={{ x: 0, y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              viewport={{ once: true }}
               key={index}
               className="w-3/4 lg:w-1/4 bg-cardColor flex flex-col justify-between text-[13px] lg:text-md shadow-md px-4 rounded-md text-center py-14 uppercase font-semibold"
             >
@@ -96,8 +104,8 @@ const Facility = () => {
                 {plan.session}
               </h2>
               <p className="lg:text-lg mt-2">{plan.price}</p>
-              {plan.headline && (<p className="text-red-500">{plan.headline}</p>)}
-            </div>
+              {plan.headline && <p className="text-red-500">{plan.headline}</p>}
+            </motion.div>
           ))}
         </div>
       </div>
