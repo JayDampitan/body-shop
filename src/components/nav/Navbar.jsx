@@ -76,7 +76,7 @@ const Navbar = () => {
             className={`block 
         absolute w-full top-0 right-0 left-0 bottom-0 h-screen bg-darkGrey`}
           >
-            <ul className="mx-auto border text-xl h-screen flex flex-col gap-4 items-center justify-center font-bold text-primary">
+            <ul className="mx-auto text-xl h-screen flex flex-col gap-4 items-center justify-center font-bold text-primary">
               {NAV__LINKS.map((item, index) => (
                 <li  key={index}>
                   {" "}
