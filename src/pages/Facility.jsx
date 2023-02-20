@@ -18,13 +18,13 @@ const Facility = () => {
           facility
         </h2>
         <p className="text-[13px] lg:text-xl px-10 mt-8 lg:max-w-4xl leading-6 lg:leading-10">
-          The Body Shop Health Club offers everything you need to effectively
+          {`   The Body Shop Health Club offers everything you need to effectively
           achieve and maintain your fitness goals including a large selection of
           cardio and strength training equipment, a full supplement shop, a
           medical grade infrared light sauna and shake bar. We've designed our
           club to be a "one stop shop" for getting results. With a variety of
           membership options to choose from, it's easy to see why The Body Shop
-          Health Club is the choice for so many.
+          Health Club is the choice for so many.`}
         </p>
       </div>
       <Image
@@ -80,12 +80,12 @@ const Facility = () => {
           merchandise and supplements
         </h2>
         <p className="text-[13px] lg:text-xl px-10 mt-8 lg:max-w-4xl leading-6 lg:leading-10 mx-auto">
-          The Body Shop Health Club is home to the only Smoothie Bar &
+          {`  The Body Shop Health Club is home to the only Smoothie Bar &
           Supplement Shop in Kings County. We offer a wide range of nutritional
           and sports supplements, protein shakes, sports drinks and accessories
           to help achieve and maintain your fitness goals. CBD, Pre Workouts,
           Fat Burners, BCAA'S, Protein Powder, Vitamins, Sleep Aids, and so much
-          more.
+          more.`}
         </p>
         <Image
           alt="image of body merchandise shop"

@@ -21,14 +21,14 @@ const Services = () => {
           services
         </h2>
         <p className="text-[13px] lg:text-xl px-10 mt-8 lg:max-w-4xl leading-6 lg:leading-10">
-          If you're serious about losing weight, getting healthy and/or building
+          {`   If you're serious about losing weight, getting healthy and/or building
           muscle, hiring a personal trainer can be a step in the right
           direction. The Body Shop Health Club has friendly and knowledgeable
           certified personal trainers available for our members. Our trainers
           will assess your fitness level, figure out what your goals are (or
           help you set goals), set up a program and keep you motivated. He or
           she will push you past your comfort level--something difficult to do
-          on your own.
+          on your own.`}
         </p>
       </div>
       {/* -----------services cards section----------------- */}

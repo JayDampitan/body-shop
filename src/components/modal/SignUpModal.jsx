@@ -38,8 +38,8 @@ const SignUpModal = ({ handleModal, modalActive }) => {
               {/* ---------modal header---------- */}
               <div className="max-w-3xl">
                 <p className="px-10 lg:px-32">
-                  If you're already a member at The Body Shop Health Club, Inc,
-                  please Sign In to complete your transaction.
+                 {` If you're already a member at The Body Shop Health Club, Inc,
+                  please Sign In to complete your transaction.`}
                 </p>
                 <button className="border border-primary text-primary px-4 py-1 rounded-full my-2 lg:mr-14">
                   <Link href="Contact">Sign In</Link>
