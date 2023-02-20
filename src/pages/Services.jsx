@@ -41,6 +41,7 @@ const Services = () => {
           return (
             <>
               <motion.div
+                key={index}
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 * index }}
@@ -48,7 +49,11 @@ const Services = () => {
                 className="w-[80%] lg:w-[70%] shadow-lg flex flex-col items-center justify-between   lg:flex-row bg-cardColor rounded-md px-6 py-6 mt-10 "
               >
                 <div className="lg:w-[50%] h-60 lg:h-[450px]">
-                  <Image src={images[index]} className="h-full object-cover" />
+                  <Image
+                    src={images[index]}
+                    className="h-full object-cover"
+                    alt="random images of people working out"
+                  />
                 </div>
                 <div className="lg:w-1/4 text-center  lg:text-start font-semibold lg:mr-32">
                   <h2 className="my-4">{service.title}</h2>

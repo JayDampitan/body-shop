@@ -32,9 +32,6 @@ const Contact = () => {
             <iframe
               className="w-[80%] h-72 lg:h-96 rounded-sm"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3214.9404800751126!2d-119.78277414884427!3d36.3137501799538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8094c09b267bf8bd%3A0xb44cb865d90a8428!2s1140%20N%20Lemoore%20Ave%2C%20Lemoore%2C%20CA%2093245!5e0!3m2!1sen!2sus!4v1676755383532!5m2!1sen!2sus"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>

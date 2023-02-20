@@ -22,7 +22,11 @@ const AboutUs = () => {
         </p>
       </div>
       <div className="w-[90%] lg:w-[60%] ">
-        <Image src={bodyShop} className="lg:-translate-y-28 -translate-y-11" />
+        <Image
+          alt="image of body shop gym"
+          src={bodyShop}
+          className="lg:-translate-y-28 -translate-y-11"
+        />
       </div>
 
       <div>
@@ -36,7 +40,7 @@ const AboutUs = () => {
               src={owners}
               width="500"
               height="500"
-              alt=""
+              alt="image of a couple"
               className="w-fullz h-full rounded-full object-cover"
             />
             <p className="font-semibold mt-6">Jane and John Doe</p>
@@ -50,7 +54,7 @@ const AboutUs = () => {
                     src={`/${index + 1}.jpg`}
                     width="500"
                     height="500"
-                    alt=""
+                    alt="image of employee"
                     className="w-full h-full rounded-full object-cover"
                   />
                   <p className="font-semibold mt-6">{employee.name}</p>

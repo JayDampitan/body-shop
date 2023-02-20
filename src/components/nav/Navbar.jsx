@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { topVariant } from "@/assets/data";
 
 const Navbar = () => {
@@ -66,25 +66,35 @@ const Navbar = () => {
         </div>
       </div>
       {/* -----------mobile menu */}
-      <div
-        className={`${
-          navOpen ? "block" : "hidden"
-        } absolute w-full top-0 right-0 left-0 bottom-0 h-screen bg-darkGrey`}
-      >
-        <ul className="mx-auto border h-screen flex flex-col items-center justify-center font-bold text-primary">
-          {NAV__LINKS.map((item, index) => (
-            <li key={index}>
-              {" "}
-              <Link onClick={() => setLocalStorage(item.path)} href={item.path}>
-                {item.display}
-              </Link>
-            </li>
-          ))}
-          <li className="absolute top-8 right-8" onClick={handleNav}>
-            <AiOutlineClose />
-          </li>
-        </ul>
-      </div>
+      <AnimatePresence>
+        {navOpen && (
+          <motion.div
+            variants={topVariant}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            className={`block 
+        absolute w-full top-0 right-0 left-0 bottom-0 h-screen bg-darkGrey`}
+          >
+            <ul className="mx-auto border text-xl h-screen flex flex-col gap-4 items-center justify-center font-bold text-primary">
+              {NAV__LINKS.map((item, index) => (
+                <li  key={index}>
+                  {" "}
+                  <Link
+                    onClick={handleNav}
+                    href={item.path}
+                  >
+                    {item.display}
+                  </Link>
+                </li>
+              ))}
+              <li className="absolute top-8 right-8" onClick={handleNav}>
+                <AiOutlineClose />
+              </li>
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

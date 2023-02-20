@@ -8,12 +8,13 @@ const BodyShopBuilt = () => {
   return (
     <div className="flex bg-gray-50 flex-col h-auto items-center justify-center">
       <Image
+        alt="image of body shop building"
         src={bodyBuilt}
         className="translate-y-2 lg:translate-y-10 h-40 lg:h-[60vh] w-[80%] mt-20 lg:mt-40 object-cover"
       />
 
-      <div className="text-center flex flex-col w-full py-8 lg:py-20 bg-primary mb-10 lg:mb-16">
-        <h2 className=" mx-auto border-b border-darkGrey uppercase text-lg lg:text-4xl font-semibold">
+      <div className="text-center flex flex-col text-offWhite w-full py-8 lg:py-20 bg-primary mb-10 lg:mb-16">
+        <h2 className=" mx-auto border-b border-offWhite uppercase text-lg lg:text-4xl font-semibold">
           welcome to body shop built
         </h2>
         <p className="text-[13px] lg:text-xl px-10 mt-4 lg:max-w-4xl leading-5 lg:leading-10 mx-auto">
@@ -27,7 +28,11 @@ const BodyShopBuilt = () => {
         </p>
       </div>
       <div className="flex flex-col lg:flex-row items-center justify-center w-full pb-10 px-2">
-        <Image className="h-96 lg:h-[100%]" src={builtAd} />
+        <Image
+          alt="body shop built ad"
+          className="h-96 lg:h-[100%]"
+          src={builtAd}
+        />
         <div className=" flex flex-col w-full lg:w-1/2 px-3 mt-3">
           <h2 className="uppercase text-lg font-semibold flex items-center justify-center lg:text-4xl">
             class schedule
