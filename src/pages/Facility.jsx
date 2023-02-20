@@ -28,6 +28,7 @@ const Facility = () => {
         </p>
       </div>
       <Image
+        alt="image of body shop gym"
         src={gym}
         className="h-64 lg:h-auto lg:w-[70%] -translate-y-8 lg:-translate-y-16 object-cover"
       />
@@ -43,16 +44,32 @@ const Facility = () => {
           weight loss and boosting metabolism. Add optional supplements to make
           your shake even more beneficial.
         </p>
-        <Image className="mx-auto mt-10" src={blend} />
+        <Image
+          alt="image of body shop smoothie in a cup"
+          className="mx-auto mt-10"
+          src={blend}
+        />
         <div className="flex items-center justify-center gap-3 mt-10">
           <div className="w-[25%]">
-            <Image className="rounded-sm" src={blend1} />
+            <Image
+              alt="image of body shop smoothie in a cup ad"
+              className="rounded-sm"
+              src={blend1}
+            />
           </div>
           <div className="w-[25%]">
-            <Image className="rounded-sm" src={blend2} />
+            <Image
+              alt="image of body shop smoothie in a cup ad"
+              className="rounded-sm"
+              src={blend2}
+            />
           </div>
           <div className="w-[25%]">
-            <Image className="rounded-sm" src={blend3} />
+            <Image
+              alt="image of body shop smoothie in a cup ad"
+              className="rounded-sm"
+              src={blend3}
+            />
           </div>
         </div>
       </div>
@@ -70,7 +87,11 @@ const Facility = () => {
           Fat Burners, BCAA'S, Protein Powder, Vitamins, Sleep Aids, and so much
           more.
         </p>
-        <Image className="mx-auto mt-10" src={shop} />
+        <Image
+          alt="image of body merchandise shop"
+          className="mx-auto mt-10"
+          src={shop}
+        />
       </div>
 
       {/* --------------tanning section------------- */}
@@ -88,7 +109,11 @@ const Facility = () => {
           watts of tanning power to provide you with a great tanning session in
           just 12 minutes or less.
         </p>
-        <Image className="mx-auto mt-10" src={tanning} />
+        <Image
+          alt="image of a woman tanning"
+          className="mx-auto mt-10"
+          src={tanning}
+        />
 
         <div className="my-10 flex flex-wrap gap-3  items-stretch justify-center ">
           {TANNING_PLANS.map((plan, index) => (
