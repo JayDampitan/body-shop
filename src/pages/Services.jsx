@@ -39,31 +39,29 @@ const Services = () => {
 
         {TRAINING__SERVICES.map((service, index) => {
           return (
-            <>
-              <motion.div
-                key={index}
-                initial={{ y: 50, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.2 * index }}
-                viewport={{ once: true }}
-                className="w-[80%] lg:w-[70%] shadow-lg flex flex-col items-center justify-between   lg:flex-row bg-cardColor rounded-md px-6 py-6 mt-10 "
-              >
-                <div className="lg:w-[50%] h-60 lg:h-[450px]">
-                  <Image
-                    src={images[index]}
-                    className="h-full object-cover"
-                    alt="random images of people working out"
-                  />
-                </div>
-                <div className="lg:w-1/4 text-center  lg:text-start font-semibold lg:mr-32">
-                  <h2 className="my-4">{service.title}</h2>
-                  <h3 className=" my-2 lg:my-4">{service.header}</h3>
-                  <p className="text-[13px] lg:text-base font-normal leading-6 lg:leading-7">
-                    {service.desc}
-                  </p>
-                </div>
-              </motion.div>
-            </>
+            <motion.div
+              key={index}
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 * index }}
+              viewport={{ once: true }}
+              className="w-[80%] lg:w-[70%] shadow-lg flex flex-col items-center justify-between   lg:flex-row bg-cardColor rounded-md px-6 py-6 mt-10 "
+            >
+              <div className="lg:w-[50%] h-60 lg:h-[450px]">
+                <Image
+                  src={images[index]}
+                  className="h-full object-cover"
+                  alt="random images of people working out"
+                />
+              </div>
+              <div className="lg:w-1/4 text-center  lg:text-start font-semibold lg:mr-32">
+                <h2 className="my-4">{service.title}</h2>
+                <h3 className=" my-2 lg:my-4">{service.header}</h3>
+                <p className="text-[13px] lg:text-base font-normal leading-6 lg:leading-7">
+                  {service.desc}
+                </p>
+              </div>
+            </motion.div>
           );
         })}
       </div>
@@ -74,11 +72,8 @@ const Services = () => {
         </h2>
         <div className="flex flex-wrap items-center justify-center gap-2 lg:gap-6 text-center my-10">
           {TRAINERS.map((trainer, index) => (
-            <div className=" mb-16">
-              <div
-                key={index}
-                className="w-[130px] h-[130px] lg:w-[220px] lg:h-[220px] bg-primary rounded-full p-2"
-              >
+            <div key={index} className=" mb-16">
+              <div className="w-[130px] h-[130px] lg:w-[220px] lg:h-[220px] bg-primary rounded-full p-2">
                 <Image
                   src={trainers[index]}
                   width="500"
