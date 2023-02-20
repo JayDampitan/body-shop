@@ -283,10 +283,16 @@ export const rightVariant = {
 };
 export const topVariant = {
   hidden: {
-    y: -100,
+    y: "-100vh",
   },
   visible: {
     y: 0,
+    transition: {
+      duration: 0.8,
+    },
+  },
+  exit: {
+    y: "-100vh",
     transition: {
       duration: 0.8,
     },
@@ -312,7 +318,7 @@ export const heroImageVariant = {
     y: 0,
     transition: {
       duration: 1,
-      delay: .5
+      delay: 0.5,
     },
   },
 };
@@ -324,7 +330,7 @@ export const mainHeroVariant = {
     y: 0,
     transition: {
       duration: 0.5,
-      delay: 1.2
+      delay: 1.2,
     },
   },
 };

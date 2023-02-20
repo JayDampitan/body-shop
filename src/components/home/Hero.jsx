@@ -38,6 +38,7 @@ const Hero = () => {
           <div className="relative mb-10">
             <div className="absolute w-full h-full bg-primary -translate-x-6 -translate-y-6"></div>
             <Image
+              alt="image of a girl and a boy stretching their legs"
               className="relative w-80 sm:w-96 lg:w-[900px] bg-primary hover:-translate-x-3 hover:-translate-y-3 duration-300"
               src={stretchingCouple}
             />
@@ -59,6 +60,7 @@ const Hero = () => {
           <div className="relative mb-10">
             <div className="absolute w-full h-full bg-primary -translate-x-6 -translate-y-6"></div>
             <Image
+              alt="image of 3 different flavor smoothies on the table"
               className="relative z-10 w-80 sm:w-96  lg:w-[900px] bg-primary hover:-translate-x-3 hover:-translate-y-3 duration-300"
               src={smoothie}
             />
