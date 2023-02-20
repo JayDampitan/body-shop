@@ -44,13 +44,10 @@ const Services = () => {
                   <Image src={images[index]} className="h-full object-cover" />
                 </div>
                 <div className="lg:w-1/4 text-center  lg:text-start font-semibold lg:mr-32">
-                  <h2 className="my-4">4 Sessions for $170.00</h2>
-                  <h3 className=" my-2 lg:my-4">Limited Offer</h3>
+                  <h2 className="my-4">{service.title}</h2>
+                  <h3 className=" my-2 lg:my-4">{service.header}</h3>
                   <p className="text-[13px] lg:text-base font-normal leading-6 lg:leading-7">
-                    Our perfect starter package! Wether you're a new member
-                    looking for that extra instruction to begin your fitness
-                    journey or a fitness regular looking to revitalize your
-                    program, our 4 one hour sessions are sure to help.
+                    {service.desc}
                   </p>
 
                   <button className=" uppercase border px-3 py-1 border-primary text-primary rounded-full text-[13px] lg:text-base mt-2 lg:my-4 hover:text-offWhite hover:bg-primary duration-300">

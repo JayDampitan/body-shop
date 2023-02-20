@@ -97,47 +97,46 @@ export const MEMBER__PLAN = [
 export const TRAINING__SERVICES = [
   {
     title: "4 sessions for $170.00",
-    header: "limited offer",
+    header: "Limited Offer",
     desc: "Our perfect starter package! Wether you're a new member looking for that extra instruction to begin your fitness journey or a fitness regular looking to revitalize your program, our 4 one hour sessions are sure to help.",
   },
   {
-    title: "4 sessions for $170.00",
-    header: "limited offer",
-    desc: "Our perfect starter package! Wether you're a new member looking for that extra instruction to begin your fitness journey or a fitness regular looking to revitalize your program, our 4 one hour sessions are sure to help.",
+    title: "15 Sessions for $535.00",
+    header: "Discount of $165 OFF",
+    desc: "If you are serious about achieving your fitness goals, our 15 session training package is a great value. If you're looking for accountability, motivation and ultimately results, our 15 session package will be sure to deliver. ",
   },
   {
-    title: "4 sessions for $170.00",
-    header: "limited offer",
-    desc: "Our perfect starter package! Wether you're a new member looking for that extra instruction to begin your fitness journey or a fitness regular looking to revitalize your program, our 4 one hour sessions are sure to help.",
+    title: "8 Session Double @ $225 Each",
+    header: "Training for only $28 per session!",
+    desc: "Grab a friend and save. Training with a friend has many benefits such as accountability, comradery and savings. When you train with a friend you reduce your rate to less than $25 per session.",
   },
 ];
 
 export const TANNING_PLANS = [
   {
     session: "single session",
-    price: "$20.00"
+    price: "$20.00",
   },
   {
     session: "10 session punch card",
-    price: "$150.00"
+    price: "$150.00",
   },
   {
     session: "non-member monthly auto pay",
-    price: "$95.00"
+    price: "$95.00",
   },
   {
     session: "member monthly auto pay",
-    price: "$50.00"
+    price: "$50.00",
   },
   {
     session: "member ultimate tanning with sauna",
     price: "$95.00",
-    headline: "all access membership"
+    headline: "all access membership",
   },
-]
+];
 
-
-export const BUILT__CLASSES = [ 
+export const BUILT__CLASSES = [
   {
     day: "monday",
     classes: [
@@ -157,7 +156,7 @@ export const BUILT__CLASSES = [
         time: "6:30pm",
         training: "Cardio Combat",
       },
-    ]
+    ],
   },
   {
     day: "tuesday",
@@ -182,7 +181,7 @@ export const BUILT__CLASSES = [
         time: "6:30pm",
         training: "Body Rock 30",
       },
-    ]
+    ],
   },
   {
     day: "wednesday",
@@ -203,7 +202,7 @@ export const BUILT__CLASSES = [
         time: "7:00pm",
         training: "Zumba",
       },
-    ]
+    ],
   },
   {
     day: "thursday",
@@ -224,7 +223,7 @@ export const BUILT__CLASSES = [
         time: "6:30pm",
         training: "Body Rock 30",
       },
-    ]
+    ],
   },
   {
     day: "friday",
@@ -245,7 +244,7 @@ export const BUILT__CLASSES = [
         time: "7:00pm",
         training: "Zumba",
       },
-    ]
+    ],
   },
   {
     day: "saturday",
@@ -254,7 +253,6 @@ export const BUILT__CLASSES = [
         time: "7:45am",
         training: "Body Rock 30",
       },
-     
-    ]
+    ],
   },
-]
+];

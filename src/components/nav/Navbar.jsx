@@ -9,6 +9,15 @@ const Navbar = () => {
   const [navOpen, setnavOpen] = useState(false);
   const [active, setActive] = useState("/");
 
+  const setLocalStorage = (currentPage) => {
+    window.sessionStorage.setItem("currentPage", currentPage);
+    setActive(currentPage);
+  };
+
+  useEffect(() => {
+    const page = window.sessionStorage.getItem("currentPage");
+    setActive(page || "/");
+  }, []);
 
   const handleNav = () => {
     setnavOpen(!navOpen);
@@ -16,7 +25,11 @@ const Navbar = () => {
   return (
     <nav className="w-full fixed bg-gray-100 top-0 right-0 left-0 uppercase z-20 shadow-lg">
       <div className="flex justify-between px-8 lg:px-14 items-center">
-        <Link href="/" onClick={() => setActive("/")} className="w-[80px] md:w-[130px] ">
+        <Link
+          href="/"
+          onClick={() => setLocalStorage("/")}
+          className="w-[80px] md:w-[130px] "
+        >
           <Image src={logo} alt="" className="" />
         </Link>
         {/* ----------desktop menu */}
@@ -25,8 +38,10 @@ const Navbar = () => {
             {NAV__LINKS.map((item, index) => (
               <li
                 key={index}
-                onClick={() => setActive(item.path)}
-                className={`font-semibold relative nav-hover ${active === item.path && "active"}`}
+                onClick={() => setLocalStorage(item.path)}
+                className={`font-semibold relative nav-hover ${
+                  active === item.path && "active"
+                }`}
               >
                 <Link href={`${item.path}`}>{item.display}</Link>
               </li>
@@ -58,7 +73,9 @@ const Navbar = () => {
           {NAV__LINKS.map((item, index) => (
             <li key={index}>
               {" "}
-              <Link href={item.path}>{item.display}</Link>
+              <Link onClick={() => setLocalStorage(item.path)} href={item.path}>
+                {item.display}
+              </Link>
             </li>
           ))}
           <li className="absolute top-8 right-8" onClick={handleNav}>
