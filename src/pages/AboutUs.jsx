@@ -1,13 +1,15 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import bodyShop from "../assets/images/bodyShopGym2.png";
 import owners from "../assets/images/owners.jpg";
 import { EMPLOYEES } from "@/assets/data";
+import { leftVariant, rightVariant } from "@/assets/data";
 
 const AboutUs = () => {
   return (
     <div className="text-center bg-gray-50 flex items-center flex-col justify-center h-auto w-full">
-      <div className="bg-primary w-full flex-col flex items-center justify-center py-32 lg:py-44">
+      <div className="bg-primary w-full flex-col flex items-center justify-center py-24 lg:py-44">
         <h2 className=" border-b border-offWhite text-offWhite uppercase text-lg lg:text-4xl font-semibold">
           welcome to the body shop family
         </h2>
@@ -19,7 +21,9 @@ const AboutUs = () => {
           seasoned athlete, our helpful staff is trained to assist you.
         </p>
       </div>
-      <Image className="w-[90%] lg:w-[60%] -translate-y-28 " src={bodyShop} />
+      <div className="w-[90%] lg:w-[60%] ">
+        <Image src={bodyShop} className="lg:-translate-y-28 -translate-y-11" />
+      </div>
 
       <div>
         <h2 className="uppercase  text-lg lg:text-5xl text-gray-800 font-bold">

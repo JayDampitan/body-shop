@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { motion } from "framer-motion";
+import { topVariant } from "@/assets/data";
 
 const Navbar = () => {
   const [navOpen, setnavOpen] = useState(false);
@@ -39,7 +41,7 @@ const Navbar = () => {
               <li
                 key={index}
                 onClick={() => setLocalStorage(item.path)}
-                className={`font-semibold relative nav-hover ${
+                className={`text-sm font-semibold relative nav-hover ${
                   active === item.path && "active"
                 }`}
               >
